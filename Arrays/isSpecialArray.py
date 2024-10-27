@@ -35,3 +35,10 @@ class Solution(object):
 The while j < n: loop condition works correctly, but the way i and j are incremented together in each iteration could be simplified. 
 The current approach involves incrementing both i and j manually, but since j is always one step ahead of i, you can make the code cleaner by only incrementing i and setting j to i + 1.
 '''
+
+class Solution:
+    def isArraySpecial(self, nums):
+        for i in range(1,len(nums)):
+            if nums[i] % 2 == nums[i-1] % 2:
+                return False
+        return True
