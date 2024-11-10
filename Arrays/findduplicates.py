@@ -21,17 +21,13 @@ Output: []'''
 
 class Solution(object):
     def findDuplicates(self, nums):
-        # s = set()
-        # res = []
-
-        # for num in nums:
-        #     if num not in s:
-        #         s.add(num)
-        #     else:
-        #         res.append(num)
-
-        # return res
-        
+        s = set()
         res = []
 
         for num in nums:
+            if num not in s:
+                s.add(num)
+            else:
+                res.append(num)
+
+        return res
