@@ -12,6 +12,8 @@ Example 2:
 Input: nums = [1,2,3], k = 3
 Output: 2
 
+
+
 '''
 
 class Solution(object):
